@@ -22,6 +22,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
     <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
     <meta name="theme-color" content="#ffffff">
 
@@ -30,6 +31,8 @@
     <!--    Stylesheets-->
     <!-- ===============================================-->
     <link href="assets/css/theme.css" rel="stylesheet" />
+    <link href="assets/css/login.css" rel="stylesheet" />
+
 
   </head>
 
@@ -48,10 +51,38 @@
               <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#service">About</a></li>
               <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#destination">Games</a></li>
               <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#booking">Leaderboard</a></li>
-              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#!">Login</a></li>
-              <li class="nav-item px-3 px-xl-4"><a class="btn btn-outline-dark order-1 order-lg-0 fw-medium" href="#!">Sign Up</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="btn btn-outline-dark order-1 order-lg-0 fw-medium" href=signup.html target="_blank">Sign Up</a></li>
               </li>
             </ul>
+            <!-- login -->
+            <div id="id01" class="modal">
+  
+              <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <img src="assets/img/profile.png" alt="Avatar" class="avatar">
+                </div>
+            
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+            
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
+            </div> <!-- end of login -->
           </div>
         </div>
       </nav>
@@ -209,7 +240,7 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <!-- <section id="booking">
+      <section id="booking">
 
         <div class="container">
           <div class="row align-items-center">
@@ -276,9 +307,9 @@
             </div>
           </div>
         </div> 
-        end of .container 
+        <!-- end of .container  -->
 
-      </section> -->
+      </section>
       <!-- <section> close ============================-->
       <!-- ============================================-->
 
@@ -287,7 +318,7 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <!-- <section id="testimonial">
+      <section id="testimonial">
 
         <div class="container">
           <div class="row">
@@ -349,16 +380,17 @@
               </div>
             </div>
           </div>
-        </div> end of .container
+        </div> 
+        <!-- end of .container -->
 
-      </section> -->
+      </section>
       <!-- <section> close ============================-->
       <!-- ============================================-->
 
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <!-- <section class="pb-0 pb-lg-4">
+      <section class="pb-0 pb-lg-4">
 
         <div class="container">
           <div class="row">
@@ -395,9 +427,10 @@
               <div class="d-flex align-items-center"> <a href="#!"> <img class="me-2" src="assets/img/play-store.png" alt="play store" /></a><a href="#!"> <img src="assets/img/apple-store.png" alt="apple store" /></a></div>
             </div>
           </div>
-        </div> end of .container
+        </div> 
+        <!-- end of .container -->
 
-      </section> -->
+      </section>
       <!-- <section> close ============================-->
       <!-- ============================================-->
 
